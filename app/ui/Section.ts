@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Main = styled.main`
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+`;
+
 export const Section = styled.section`
   height: 100vh;
   scroll-snap-align: start;
