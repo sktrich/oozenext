@@ -1,55 +1,63 @@
+"use client";
 import Image from "next/image";
 import { lusitana } from "./ui/fonts";
 import { text } from "stream/consumers";
+import { MenuHamburguer } from "./MenuHamburger";
+import { Main } from "./ui/page";
+import { Section } from "./ui/Section";
 
 export default function Home() {
   return (
-    <main className={`${lusitana.className} bg-h-opage-h text-sm`}>
-      <section id="home">
+    <Main>
+      <MenuHamburguer></MenuHamburguer>
+      <Section>
+        <section id="home">
+          {/*
         <header className="bg-h-blue-p  shadow-h-black-u h-24 flex py-3 px-5 justify-between items-center sticky top-0 z-20 duration-dur-s">
+
           <div className="flex justify-center cursor-pointer text-6xl">
-            <span
-              className="absolute rounded-full border-2 border-border-style w-24 h-24 top-2"
-              style={{
-                backgroundImage:
-                  "linear-gradient(45deg, rgb(191, 28, 28, 75%), rgb(204, 110, 110, 75%))",
-              }}
-            ></span>
-            <h1>
-              <a
-                href="#home"
-                className="relative no-underline text-h-link-t "
-                style={{
-                  letterSpacing: "14px",
-                  textShadow:
-                    "-3px -3px 0px rgb(16, 15, 15, 0.953), -3px 3px 0px rgb(16, 15, 15, 0.953), 3px -3px 0px rgb(16, 15, 15, 0.953), 3px 0px 0px rgb(16, 15, 15, 0.953)",
-                }}
-              >
-                HAJIMARI
-              </a>
-            </h1>
-          </div>
-          <div className="container">
-            <nav className="hidden md:flex items-center gap-10 text-md">
-              <ul className="nav-list">
-                <li>
-                  <a href="#home">Home</a>
-                </li>
-                <li>
-                  <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                  <a href="#produtos">Produtos</a>
-                </li>
-                <li>
-                  <a href="#contato">Contato</a>
-                </li>
-                <li>
-                  <a href="#depoimentos">depoimentos</a>
-                </li>
-              </ul>
-            </nav>
-            <div className="toggle-switch">
+        <span
+          className="absolute rounded-full border-2 border-border-style w-24 h-24 top-2"
+          style={{
+            backgroundImage:
+              "linear-gradient(45deg, rgb(191, 28, 28, 75%), rgb(204, 110, 110, 75%))",
+          }}
+        ></span>
+        <h1>
+          <a
+            href="#home"
+            className="relative no-underline text-h-link-t "
+            style={{
+              letterSpacing: "14px",
+              textShadow:
+                "-3px -3px 0px rgb(16, 15, 15, 0.953), -3px 3px 0px rgb(16, 15, 15, 0.953), 3px -3px 0px rgb(16, 15, 15, 0.953), 3px 0px 0px rgb(16, 15, 15, 0.953)",
+            }}
+          >
+            HAJIMARI
+          </a>
+        </h1>
+      </div>
+      <div className="container">
+        <nav className="hidden md:flex items-center gap-10 text-md">
+          <ul className="nav-list">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#produtos">Produtos</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+            <li>
+              <a href="#depoimentos">depoimentos</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="toggle-switch">
               <label className="switch-label">
                 <input type="checkbox" className="checkbox" />
                 <span className="slider"></span>
@@ -65,14 +73,15 @@ export default function Home() {
                 <path className="line" d="M7 16 27 16"></path>
               </svg>
             </label>
-          </div>
-        </header>
-        <h1>HAJIMARI</h1>
-      </section>
-      <section>
-        <h1>Minhas gotas evaporam</h1>
-        <p>auhsuasa husjaijsi ajijsidj as</p>
-      </section>
-    </main>
+      </div>
+        </header>*/}
+          <h1>HAJIMARI</h1>
+        </section>
+        <section>
+          <h1>Minhas gotas evaporam</h1>
+          <p>auhsuasa husjaijsi ajijsidj as</p>
+        </section>
+      </Section>
+    </Main>
   );
 }

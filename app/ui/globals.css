@@ -2,10 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255
+  --primary: rgb(40, 23, 83);
+  --font-body: rgb(15, 15, 16);
+  --style: rgb(191, 28, 28, 75%);
+  --border-style: rgb(204, 110, 110, 75%);
+
+  --link: rgb(240, 248, 255);
+  --link-hover: rgb(100, 159, 210);
+  --black: rgb(16, 15, 15, 0.953);
+  --black-bg: rgb(0, 0, 0);
+
+  --page: rgb(211, 85, 148);
+  --opage: rgb(240, 248, 255);
+  --cor-be: rgb(183, 22, 36);
+  --cor-ve: rgb(255, 255, 255);
 }
 
 @media (prefers-color-scheme: dark) {
