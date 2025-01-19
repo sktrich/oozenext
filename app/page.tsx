@@ -5,10 +5,13 @@ import { text } from "stream/consumers";
 import { MenuHamburguer } from "./MenuHamburger";
 import { Main } from "./ui/page";
 import { Section } from "./ui/Section";
+import { GlobalStyle } from "./ui/page";
 
 export default function Home() {
   return (
     <Main>
+      <GlobalStyle />
+
       <MenuHamburguer></MenuHamburguer>
       <Section>
         <section id="home">

@@ -1,13 +1,7 @@
 import styled from "styled-components";
+import createGlobalStyle from "styled-components";
 
-export const Main = styled.main`
-  main {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-  }
-
+export const GlobalStyle = createGlobalStyle`
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
@@ -29,4 +23,10 @@ export const Main = styled.main`
     border-radius: 20px;
     border: 0px solid #000000;
   }
+`;
+export const Main = styled.main`
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 `;
