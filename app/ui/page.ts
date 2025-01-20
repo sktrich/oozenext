@@ -1,26 +1,35 @@
-import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+export const Main = styled.main`
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+`;
 
-  /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #302c2c #b2aeae;
+export const Section = styled.section`
+  height: 100vh;
+  scroll-snap-align: start;
+  // position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-body);
+  font-family: YOZ, sans-serif;
+
+  &:first-child {
+    background-color: rgb(240, 248, 255);
   }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 7px;
+  &:nth-child(2n + 2) {
+    background-color: var(--black-bg);
   }
-
-  *::-webkit-scrollbar-track {
-    background: #454545;
+  &:nth-child(2n + 3) {
+    background-color: var(--opage);
   }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #ad09092c;
-    border-radius: 20px;
-    border: 0px solid #000000;
+  &:nth-last-child(1) {
+    background-color: var(--black);
+    color: var(--link);
+    font-family: pythia, system-ui;
+    height: 35vh;
   }
 `;
