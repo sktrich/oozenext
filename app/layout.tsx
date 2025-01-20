@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
 import "./ui/globals.css";
+import { MenuHamburguer } from "./MenuHamburger";
 
 export const metadata: Metadata = {
   title: "Oozenext",

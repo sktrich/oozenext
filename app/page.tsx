@@ -1,16 +1,12 @@
 "use client";
-import Image from "next/image";
-import { lusitana } from "./ui/fonts";
-import { text } from "stream/consumers";
 import { MenuHamburguer } from "./MenuHamburger";
-import { Section } from "./ui/page";
+import { Section } from "./ui/pageStyle";
 
 export default function Home() {
   return (
     <main>
       <MenuHamburguer></MenuHamburguer>
       <Section>
-        {" "}
         <h1>Estou aqui tb</h1>
       </Section>
       <Section>
