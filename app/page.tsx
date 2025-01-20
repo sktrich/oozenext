@@ -3,15 +3,18 @@ import Image from "next/image";
 import { lusitana } from "./ui/fonts";
 import { text } from "stream/consumers";
 import { MenuHamburguer } from "./MenuHamburger";
-import { Main, Section } from "./ui/page";
+import { Section } from "./ui/page";
 
 export default function Home() {
   return (
-    <Main>
+    <main>
       <MenuHamburguer></MenuHamburguer>
       <Section>
-        <section id="home">
-          {/*
+        {" "}
+        <h1>Estou aqui tb</h1>
+      </Section>
+      <Section>
+        {/*
         <header className="bg-h-blue-p  shadow-h-black-u h-24 flex py-3 px-5 justify-between items-center sticky top-0 z-20 duration-dur-s">
 
           <div className="flex justify-center cursor-pointer text-6xl">
@@ -74,13 +77,12 @@ export default function Home() {
             </label>
       </div>
         </header>*/}
-          <h1>HAJIMARI</h1>
-        </section>
-        <section>
-          <h1>Minhas gotas evaporam</h1>
-          <p>auhsuasa husjaijsi ajijsidj as</p>
-        </section>
+        <h1>HAJIMARI</h1>
       </Section>
-    </Main>
+      <Section>
+        <h1>Minhas gotas evaporam</h1>
+        <p>auhsuasa husjaijsi ajijsidj as</p>
+      </Section>
+    </main>
   );
 }
